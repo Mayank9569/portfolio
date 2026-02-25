@@ -17,15 +17,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-}
-
-nav .logo {
-    font-weight: 700;
-    font-size: 22px;
 }
 
 nav ul {
@@ -40,7 +35,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -48,7 +42,7 @@ nav ul li a:hover {
     color: #38bdf8;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -59,28 +53,21 @@ nav ul li a:hover {
     border-radius: 50%;
     border: 4px solid #38bdf8;
     margin-bottom: 20px;
-    transition: 0.3s;
-}
-
-.hero img:hover {
-    transform: scale(1.05);
 }
 
 .hero h1 {
     font-size: 40px;
-    font-weight: 700;
 }
 
 .hero p {
     margin-top: 10px;
-    font-size: 18px;
     color: #cbd5e1;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin: 10px;
     padding: 12px 25px;
     background: #38bdf8;
     color: black;
@@ -95,13 +82,22 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+/* WHATSAPP BUTTON */
+.whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
 /* SECTIONS */
 section {
     padding: 80px 8%;
 }
 
 h2 {
-    font-size: 28px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -135,12 +131,25 @@ h2::after {
     color: black;
 }
 
+/* EDUCATION */
+.education-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
 /* PROJECTS */
 .project-card {
     background: #1e293b;
     padding: 25px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     transition: 0.3s;
 }
 
@@ -149,15 +158,11 @@ h2::after {
     box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-/* CONTACT */
-#contact a {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-#contact a:hover {
-    text-decoration: underline;
+/* CONTACT BUTTONS */
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 /* RESPONSIVE */
@@ -168,9 +173,8 @@ h2::after {
     }
 
     nav ul {
-        margin-top: 10px;
         flex-direction: column;
-        align-items: center;
+        margin-top: 10px;
     }
 
     nav ul li {
